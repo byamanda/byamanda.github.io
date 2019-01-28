@@ -1,0 +1,23 @@
+---
+title: Events and Showcases
+page_id: events
+---
+<h1>Events and Showcases</h1>
+
+<ul>
+  {% assign events = site.events | sort: "start_date" | reverse %}
+  {% for event in events %}
+    <li>
+      <img src="/assets/images/{{ event.image }}" alt=""/> 
+
+      <div class="content">
+        <h2><a href="{{ event.url }}">{{ event.title }}</a></h2>
+        <h3>{{ event.start_date | date: "%a %b %-d, %Y, %-I:%M %p"}} - {{ event.end_date | date: "%a %b %-d, %Y, %-I:%M %p" }}</h3>
+        <h3>{{ event.location_name }} 
+          (<a href="https://maps.google.com?q={{event.address}}">click for map</a>)
+        </h3> 
+        <p>{{ event.content | mardownify }}</p>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

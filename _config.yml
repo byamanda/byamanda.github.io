@@ -1,0 +1,48 @@
+
+# SEO Tags 
+title: "Amanda Desire Evelyn"
+description: ""
+logo: "/assets/images/logo.png"
+
+# twitter
+#   username
+#   card: summary
+#
+# facebook
+#   app_id
+#   publisher
+#   admins
+#
+# social
+#   name
+#   links
+#     - ...
+#
+# webmaster_verification
+#   google
+
+# Global Variables
+social:
+  instagram: "http://instagram.com/floralsbyamanda"
+  email: "desireeevelynart@gmail.com"
+  facebook: "http://www.facebook.com/amandadesireeevelyn"
+  youtube: "https://www.youtube.com/channel/UCvBizVmlOTlE87GTnSAtPUw"
+
+collections:
+  events:
+    output: true
+
+defaults:
+  - scope: 
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+      page_id: "event"
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+plugins:
+  - jekyll-seo-tag
