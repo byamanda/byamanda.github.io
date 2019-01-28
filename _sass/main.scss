@@ -22,6 +22,13 @@ hr {
 a {
   text-decoration: none;
   color: $black;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+  
+a:hover {
+  border-bottom: 3px solid $pink;
+  color: $pink;
 }
 
 section {
@@ -78,8 +85,10 @@ nav {
   text-align: center;
 
   a {
-    margin: 1em;
+    padding: 1em;
+    display: block;
   }
+
 
   a.current {
     // TODO
@@ -126,67 +135,6 @@ nav {
     width: 100%;
   }
 }
-
-@media only screen and (min-width: 900px) {
-  #index {
-    overflow: auto;
-    img {
-      width: 40%;
-      float: right;
-      margin: 0 1em;
-    }
-  }
-
-  #services {
-    overflow: auto;
-
-    h1, h2 {
-      text-align: left;
-    }
-
-    img {
-      width: 40%;
-      float: left;
-      margin: 0 1em 0 0;
-    }
-  }
-
-  #events {
-    h1, h2 {
-      text-align: left;
-    }
-
-    ul {
-      li {
-        overflow: auto;
-        margin: 0 0 2em 0;
-
-        img {
-          width: 40%;
-          float: left;
-          margin: 0 1em 0 0;
-        }
-
-        .content {
-          margin: 0 0 0 40%;
-        }
-      }
-    }
-  }
-
-  #event {
-    overflow: auto;
-  
-    img {
-      width: 40%;
-      float: left;
-      margin: 0 1em 0 0;
-    }
-  }
-}
-
-
-
 
 #contact {
   text-align: center; 
@@ -256,4 +204,72 @@ footer {
     margin: 1em;
   }
 }
+
+@media only screen and (min-width: 900px) {
+  nav {
+    a {
+      display: inline;
+    }
+  }
+
+  #index {
+    overflow: auto;
+    img {
+      width: 40%;
+      float: right;
+      margin: 0 1em;
+    }
+  }
+
+  #services {
+    overflow: auto;
+
+    h1, h2 {
+      text-align: left;
+    }
+
+    img {
+      width: 40%;
+      float: left;
+      margin: 0 1em 0 0;
+    }
+  }
+
+  #events {
+    h1, h2 {
+      text-align: left;
+    }
+
+    ul {
+      li {
+        overflow: auto;
+        margin: 0 0 2em 0;
+
+        img {
+          width: 40%;
+          float: left;
+          margin: 0 1em 0 0;
+        }
+
+        .content {
+          margin: 0 0 0 40%;
+        }
+      }
+    }
+  }
+
+  #event {
+    overflow: auto;
+  
+    img {
+      width: 40%;
+      float: left;
+      margin: 0 1em 0 0;
+    }
+  }
+}
+
+
+
+
 
