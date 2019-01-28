@@ -23,6 +23,8 @@ test:
   - master
 
 pages:
+  tags
+  - gitlab-org
   stage: deploy
   script:
   - bundle exec jekyll build -d public
