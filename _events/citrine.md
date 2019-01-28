@@ -13,4 +13,4 @@ Citrine is open during the month of November. Thirty percent of every purchase s
 non-profit so this is a great time to not only support me and my business but another local 
 business that is doing great things in our community!
 
-You can learn more about Citrine health here!
+You can learn more about Citrine health [here!](https://citrinehealth.org/)

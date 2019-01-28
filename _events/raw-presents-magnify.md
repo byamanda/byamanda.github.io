@@ -10,6 +10,6 @@ Come join me for a night of local Seattle art of all shapes and sizes! I will be
 this is a great chance to come and see what I've been up to lately (I'll be launching new 
 prints!). I'll be giving away a little goodie bag with every purchase at the show as well!
 
-Purchase your tickets at [here](www.rawartists.org/desireeevelyn)
+[Purchase your tickets here](www.rawartists.org/desireeevelyn)
 
-Source: http://www.rawartists.org/desireeevelyn
+[Raw Artists Website](http://www.rawartists.org/desireeevelyn)
