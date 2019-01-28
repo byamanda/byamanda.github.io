@@ -25,11 +25,13 @@ a {
 }
 
 section {
-  margin: 2em 5em;  
+  max-width: 1200px;
+  padding: 2em;
+  margin: 0 auto;
 }
 
 p {
-  margin: 1em;
+  margin: 0 1em 1em 1em;
 }
 
 // TODO
@@ -44,7 +46,7 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  margin: 0.5em 0 1em 0; 
+  margin: 0 0 1em 0; 
 }
 
 h3 {
@@ -63,6 +65,7 @@ header {
     
   img {
     width: 50%;
+    max-width: 800px;
   }
 
   h1 {
@@ -85,50 +88,105 @@ nav {
 
 #index {
   img {
-    width: 40%;
-    float: right;
-    margin: 0 1em;
+    width: 100%; 
   }
 }
 
 #services {
-  overflow: auto;
+  h1, h2 {
+    text-align: center;
+  }
 
   img {
-    width: 40%;
-    float: left;
-    margin: 0 1em 0 0;
+    width: 100%;
   }
 }
 
 #events {
+  h1, h2 {
+    text-align: center;
+  }
+
+  h3 {
+    padding-left: 1em;
+  }
+
   ul {
     li {
-      overflow: auto;
-      margin: 0 0 2em 0;
-
+      margin-bottom: 4em;
       img {
-        width: 40%;
-        float: left;
-        margin: 0 1em 0 0;
-      }
-
-      .content {
-        margin: 0 0 0 40%;
+        width: 100%;
       }
     }
   }
 }
 
 #event {
-  overflow: auto;
-
   img {
-    width: 40%;
-    float: left;
-    margin: 0 1em 0 0;
+    width: 100%;
   }
 }
+
+@media only screen and (min-width: 900px) {
+  #index {
+    overflow: auto;
+    img {
+      width: 40%;
+      float: right;
+      margin: 0 1em;
+    }
+  }
+
+  #services {
+    overflow: auto;
+
+    h1, h2 {
+      text-align: left;
+    }
+
+    img {
+      width: 40%;
+      float: left;
+      margin: 0 1em 0 0;
+    }
+  }
+
+  #events {
+    h1, h2 {
+      text-align: left;
+    }
+
+    ul {
+      li {
+        overflow: auto;
+        margin: 0 0 2em 0;
+
+        img {
+          width: 40%;
+          float: left;
+          margin: 0 1em 0 0;
+        }
+
+        .content {
+          margin: 0 0 0 40%;
+        }
+      }
+    }
+  }
+
+  #event {
+    overflow: auto;
+  
+    img {
+      width: 40%;
+      float: left;
+      margin: 0 1em 0 0;
+    }
+  }
+}
+
+
+
 
 #contact {
   text-align: center; 
@@ -198,5 +256,4 @@ footer {
     margin: 1em;
   }
 }
-
 
