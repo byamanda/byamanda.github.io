@@ -23,7 +23,7 @@ test:
   - master
 
 pages:
-  tags
+  tags:
   - gitlab-org
   stage: deploy
   script:
