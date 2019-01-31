@@ -1,9 +1,10 @@
 $header-font: 'Amatic SC', cursive;
 $body-font: 'Open Sans Condensed', sans-serif;
 
-$pink: #ffe0cf;
+$pink: #fdd5d5;
+$secondary: #7d3654;
 $yellow: #fff3e1;
-$green: #fff3e1; //TODO: This is wrong!
+$green: #0f7d80; 
 $black: #505050;
 $white: #ffffff;
 
@@ -34,7 +35,7 @@ a:hover {
 
 section {
   max-width: 1200px;
-  padding: 1em;
+  padding: 0 1em 1em 1em;
   margin: 0 auto;
 }
 
@@ -72,7 +73,7 @@ header {
   text-align: center;
   margin-bottom: 1em;
   padding: 1em;
-    
+
   h1 {
     font-size: 2em;
   }
@@ -101,7 +102,7 @@ nav {
   }
 
   .logo {
-    width: 25%;
+    width: 33.33333333%;
   }
 
   .active {
@@ -178,7 +179,7 @@ nav {
       }
 
       input:focus, textarea:focus {
-        border: 1px solid $pink;
+        border: 1px solid $secondary;
       }
 
       button {
@@ -192,7 +193,8 @@ nav {
       }
 
       button:hover {
-        background-color: $yellow;
+        background-color: $secondary;
+        color: $white;
         cursor: pointer;
       }
     }
