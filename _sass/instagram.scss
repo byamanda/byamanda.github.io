@@ -1,0 +1,26 @@
+#instafeed {
+  width: 100%;
+  clear: right;
+  margin: 1em 0 0 0;
+  overflow: auto;
+
+  a {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    width: 48%;
+    border-radius: 0;
+    margin: 1%;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #instafeed {
+    img {
+      width: 23%;
+    }
+  }
+}

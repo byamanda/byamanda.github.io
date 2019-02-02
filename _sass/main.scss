@@ -213,11 +213,13 @@ footer {
   }
 
   #index {
-    overflow: auto;
-    img {
-      width: 40%;
-      float: right;
-      margin: 0 1em;
+    .content {
+      overflow: auto;
+      img {
+        width: 40%;
+        float: right;
+        margin: 0 1em;
+      }
     }
   }
 
