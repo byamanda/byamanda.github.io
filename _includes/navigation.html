@@ -1,12 +1,16 @@
 <nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" 
-    {% if page.url == item.link %}
-      class="current"   
-    {% endif %}
-    >
-      {{ item.name }}
-    </a>
- {% endfor %}
+  <span class="navbar-toggle" id="js-navbar-toggle">
+    <i class="fas fa-bars"></i>
+  </span>
+
+  <img class="logo" src="/assets/images/logo.png" alt="Logo"/>
+
+  <ul class="main-nav" id="js-menu">
+    {% for item in site.data.navigation %}
+      <li>
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 </nav> 
 
