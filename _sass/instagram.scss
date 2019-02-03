@@ -1,4 +1,4 @@
-#instafeed {
+#ig-feed {
   clear: right;
   margin: 1em 0 0 0;
   overflow: auto;
@@ -25,8 +25,18 @@
   }
 }
 
+#ig-profile {
+  text-align: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+}
+
 @media only screen and (min-width: 900px) {
-  #instafeed {
+  #ig-feed {
     a {
       padding-bottom: 23%;
       width: 23%;
