@@ -1,25 +1,34 @@
 #instafeed {
-  width: 100%;
   clear: right;
   margin: 1em 0 0 0;
   overflow: auto;
+  width: 100%;
 
   a {
-    margin: 0;
-    padding: 0;
-  }
-  
-  img {
-    width: 48%;
-    border-radius: 0;
+    border: 0;
+    display: block;
+    float: left;
+    height: 0;
     margin: 1%;
-    padding: 0;
+    overflow: hidden;
+    padding-bottom: 48%;
+    position: relative;
+    width: 48%;
+
+    img {
+      border-radius: 0;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
 @media only screen and (min-width: 900px) {
   #instafeed {
-    img {
+    a {
+      padding-bottom: 23%;
       width: 23%;
     }
   }
