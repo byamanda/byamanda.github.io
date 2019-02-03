@@ -1,8 +1,12 @@
+#instagram {
+  text-align: center;
+}
+
+
 #ig-feed {
   clear: right;
-  margin: 1em 0 0 0;
+  margin: 1em 0;
   overflow: auto;
-  width: 100%;
 
   a {
     border: 0;
@@ -37,7 +41,15 @@
 }
 
 @media only screen and (min-width: 900px) {
+  #ig-profile {
+    margin: 2em 0;
+    float: left;
+    width: 25%;
+  }
+
   #ig-feed {
+    width: 75%;
+
     a {
       padding-bottom: 23%;
       width: 23%;

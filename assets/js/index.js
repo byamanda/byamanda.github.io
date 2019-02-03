@@ -30,17 +30,15 @@ num_posts: 8
     fetch(userRequest)
       .then(data => data.json())
       .then((results) => {
-        let unameElem = document.createElement('h2')
-        let statsElem = document.createElement('h3');
-        let profilePicture = document.createElement('img');
+        let handleElem = document.getElementById('ig-handle');
+        let pictureElem = document.getElementById('ig-profilepic');
+        let followersElem = document.getElementById('ig-followers');
+        let postsElem = document.getElementById('ig-posts');
 
-        profilePicture.src = results.data.profile_picture;
-        unameElem.innerHTML = '@' + results.data.username;
-        statsElem.innerHTML = results.data.counts.followed_by + ' - ' + results.data.counts.media;
-
-        // profile.appendChild(profilePicture);
-        // profile.appendChild(unameElem);
-        // profile.appendChild(statsElem);
+        handleElem.innerHTML = '@' + results.data.username;
+        pictureElem.src = results.data.profile_picture;
+        followersElem.innerHTML = results.data.counts.followed_by;
+        postsElem.innerHTML = results.data.counts.media;
       });
   });
 })();
