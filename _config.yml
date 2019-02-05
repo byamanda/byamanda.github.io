@@ -1,33 +1,27 @@
-
 # SEO Tags 
 title: "Amanda Desire Evelyn"
 tagline: "Florals with Feeling"
-description: ""
+description: "Botanical artist and face painter based in the pacific northwest"
 logo: "/assets/images/logo.png"
-
-# twitter
-#   username
-#   card: summary
-#
-# facebook
-#   app_id
-#   publisher
-#   admins
-#
-# social
-#   name
-#   links
-#     - ...
-#
-# webmaster_verification
-#   google
+lang: "en_US"
+url: "http://byamanda.gitlab.io"
+webmaster_verification: "S2RSg4VhyJtZ-F5IB0uK_w446W-IcWkom9o-SOOLhjU"
 
 # Global Variables
 social:
+  # These are used for the jekyll build
+  name: "Amanda Desiree Hamill"
   instagram: "http://instagram.com/floralsbyamanda"
   email: "desireeevelynart@gmail.com"
   facebook: "http://www.facebook.com/amandadesireeevelyn"
   youtube: "https://www.youtube.com/channel/UCvBizVmlOTlE87GTnSAtPUw"
+
+  # Meta tags
+  links:
+    - "http://instagram.com/floralsbyamanda"
+    - "desireeevelynart@gmail.com"
+    - "http://www.facebook.com/amandadesireeevelyn"
+    - "https://www.youtube.com/channel/UCvBizVmlOTlE87GTnSAtPUw"
 
 collections:
   events:
@@ -47,3 +41,4 @@ defaults:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
