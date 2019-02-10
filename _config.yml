@@ -26,6 +26,8 @@ social:
 collections:
   events:
     output: true
+  gallery:
+    output: false
 
 defaults:
   - scope: 
@@ -34,6 +36,12 @@ defaults:
     values:
       layout: "event"
       page_id: "event"
+  - scope: 
+      path: ""
+      type: "gallery"
+    values:
+      layout: "gallery"
+      page_id: "gallery"
   - scope:
       path: ""
     values:
