@@ -2,13 +2,13 @@
 title: Events and Showcases
 page_id: events
 ---
-<h1>Events and Showcases</h1>
+<h1>{{ page.title }}</h1>
 
 <ul>
   {% assign events = site.events | sort: "start_date" | reverse %}
   {% for event in events %}
     <li>
-      <h2><a href="{{ event.url }}">{{ event.title }} <i class="fa fa-link"></i></a></h2>
+      <h2><a href="{{ event.url }}">{{ event.title }}</a></h2>
       <img src="/assets/images/{{ event.image }}" alt=""/> 
 
       <div class="content">

@@ -1,0 +1,21 @@
+---
+title: Gallery
+page_id: gallery
+---
+<h1>{{ page.title }}</h1>
+
+<div class="container">
+  {% for item in site.gallery %}
+    <div class="item">
+      <div class="frame">
+        <img src="/assets/images/gallery/{{ item.image }}" alt="{{ item.title }}" />
+      </div>
+      <h2>{{ item.title }}</h2>
+      <h3>{% if item.stock %}Availible{% else %}Sold{% endif %} - Size {{ item.size }}</h3>
+    </div>
+  {% endfor %}
+</div>
+
+<h2>Interested in one of these pieces? Send me an <a href="mailto:{{ site.social.email }}">email!</a></h2>
+
+
