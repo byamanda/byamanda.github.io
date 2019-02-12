@@ -1,12 +1,21 @@
 $header-font: 'Amatic SC', cursive;
 $body-font: 'Open Sans Condensed', sans-serif;
 
+// Brand colors
 $pink: #fdd5d5;
 $secondary: #7d3654;
 $yellow: #fff3e1;
-$green: #0f7d80; 
+$green: #0f7d80;
+
+// General 
 $black: #505050;
 $white: #ffffff;
+
+// Alerts
+$success: #16dd5c;
+$inform: blue;
+$warn: yellow;
+$error: #dd3716;
 
 html, body {
   font-size: 24px;
@@ -72,6 +81,33 @@ h3 {
 img {
   border-radius: 1em;
 }
+
+#alert {
+  z-index: 1;
+  font-weight: bold;
+  border: 2px solid transparent;
+  padding: 0.5em;
+  position: fixed;
+  top: -5em;
+  right: 1em;
+  left: 1em;
+  color: $white;
+  opacity: 0.9;
+  transition: all 0.2s ease-in;
+
+  &.success {
+    background-color: $success;  
+  }
+
+  &.error {
+    background-color: $error;
+  }
+
+  &.active {
+    top: 1em;
+  }
+}
+
 
 
 header {
