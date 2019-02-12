@@ -11,6 +11,7 @@ page_id: gallery
         <img src="/assets/images/gallery/{{ item.image }}" alt="{{ item.title }}" />
       </div>
       <h2>{{ item.title }}</h2>
+      <h3>{{ item.medium }}</h3>
       <h3>{% if item.stock %}Availible{% else %}Sold{% endif %} - Size {{ item.size }}</h3>
     </div>
   {% endfor %}

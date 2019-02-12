@@ -139,9 +139,9 @@ nav {
   .container {
     margin: 1em auto 2em auto;
     display: grid;
-    grid-template-columns: repeat(2, 48%);
-    grid-column-gap: 4%;
-    grid-row-gap: 4%;
+    grid-template-columns: repeat(2, calc(50% - 0.5em));
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
 
     .item {
       //border: 1px solid $black;
