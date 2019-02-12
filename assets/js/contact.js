@@ -12,7 +12,7 @@
   
     let alert = document.getElementById('alert');
 
-    let url = ''; // event.target.action;
+    let url = event.target.action;
     let formData = new FormData(event.target);
     
     fetch(url, {
