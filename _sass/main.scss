@@ -295,7 +295,7 @@ nav {
     max-width: 600px;
     margin: 0 auto;
 
-    .form-group {
+    .form-group, .mc-field-group, .clear {
       margin: 0 0 1em 0;
   
       
@@ -318,22 +318,31 @@ nav {
         border: 1px solid $secondary;
       }
 
-      button {
+      input[type="submit"] {
         background-color: $pink;
         border: none;
         color: $black;
         width: 50%;
         margin: 0 auto;
         display: block;
-        border-radius: 1em;
+        border-radius: 0.4em;
       }
 
-      button:hover {
+      input[type="submit"]:hover {
         background-color: $secondary;
         color: $white;
         cursor: pointer;
       }
     }
+  }
+}
+
+#mc_embed_signup {
+  margin: 2em;
+
+  h2 {
+    text-align: center;
+    margin: 0;
   }
 }
 
