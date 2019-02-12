@@ -1,0 +1,38 @@
+---
+title: Face painting
+page_id: facepaint
+---
+
+<h1>{{ page.title }}</h1>
+
+<div class="thumbtack">
+  <span class="widget" target="_blank"> <img style="height: 128px; width: 128px;" src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/pro-svg/orange/2018.svg" /> <script src="https://www.thumbtack.com/profile/widgets/scripts/?service_id=u:7mQTSwBcretQ&widget_id=profile"></script> </span>
+  <div class="widget" id="tt-review-widget-star"> <img src="https://static.thumbtackstatic.com/media/logos/thumbtack/wordmark.svg" alt="Thumbtack" class="tt-logo" /> <span target="_blank"> <div>Face Painting by Amanda</div> </span> <div id="tt-dynamic"> <img src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/review-widget/orange_star.svg"><img src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/review-widget/orange_star.svg"><img src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/review-widget/orange_star.svg"><img src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/review-widget/orange_star.svg"><img src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/review-widget/orange_star.svg"><span>27 reviews</span> </div> <script src="https://www.thumbtack.com/profile/widgets/scripts/?service_id=u:7mQTSwBcretQ&widget_id=review&type=star"></script> </div>
+</div>
+
+<p>
+  I’d love to come and be a part of your next event! I fell in love with face painting while I was living in Orlando and working at Disney World. I have 3 years of experience in the field. Send me an <a href="mailto:{{ site.data.social.email }}">email</a> or send me a message through the <a href="/contact.html">Contact</a> tab and we’ll get it set up!
+</p>
+
+<div class="images">
+  <img src="/assets/images/facepaint/facepaint1.jpeg" alt="Girl with Unicorn Facepaint"/>
+  <img src="/assets/images/facepaint/facepaint2.jpeg" alt=""/>
+  <img src="/assets/images/facepaint/facepainting1.jpg" alt=""/>
+  <img src="/assets/images/facepaint/facepaint7.jpg" alt=""/>
+  <img src="/assets/images/facepaint/facepainting2.jpg" alt=""/>
+  <img src="/assets/images/facepaint/facepainting4.jpg" alt=""/>
+  <img src="/assets/images/facepaint/facepaint5.jpeg" alt=""/>
+</div>
+
+<div class="quotes">
+  <h2>What Clients are Saying</h2>
+  <hr />
+{% for quote in site.data.facepaint.quotes %}
+  <blockquote>
+    {{ quote.comment }}
+    <br />
+    <div class="author">- {{ quote.name }}</div>
+  </blockquote>
+   
+{% endfor %}
+</div>
