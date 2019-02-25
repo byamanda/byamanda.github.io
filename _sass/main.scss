@@ -42,6 +42,10 @@ a:hover {
   color: $pink;
 }
 
+a.logo {
+  border-bottom-color: transparent;
+}
+
 section {
   max-width: 900px;
   padding: 0 1em 1em 1em;
