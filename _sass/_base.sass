@@ -1,0 +1,321 @@
+@import 'normalize'
+    
+html, body 
+    font-size: 24px
+    line-height: 1.5em
+    font-family: $body-font
+    color: $black
+    box-sizing: border-box // TODO: change this to all!
+
+* 
+    box-sizing: border-box
+    line-height: 1.5em
+
+hr 
+    width: 30px
+    margin-bottom: 0.5em
+
+img 
+    border-radius: 1em
+
+a 
+    text-decoration: none
+    color: $black
+    border-bottom: 3px solid transparent
+    transition: all 0.3s
+
+    &:hover 
+        border-bottom: 3px solid $pink
+        color: $pink
+
+    &.logo 
+        border-bottom-color: transparent
+
+section 
+    max-width: 900px
+    padding: 0 1em 1em 1em
+    margin: 0 auto
+    a 
+        color: $secondary
+  
+#alert 
+    z-index: 1
+    font-weight: bold
+    border: 2px solid transparent
+    padding: 0.5em
+    position: fixed
+    top: -5em
+    right: 1em
+    left: 1em
+    color: $white
+    opacity: 0.9
+    transition: all 0.2s ease-in
+
+    &.success 
+        background-color: $success  
+  
+    &.error 
+        background-color: $error
+  
+    &.active 
+        top: 1em
+  
+header 
+    text-align: center
+    margin-bottom: 1em
+    padding: 1em
+
+    h1 
+        font-size: 2em
+  
+nav 
+    padding: 1em
+    text-align: center
+    font-weight: bold
+
+    .main-nav
+        display: none
+
+        li 
+            text-align: center
+            margin: 1em auto
+        
+    .navbar-toggle 
+        position: absolute
+        top: 0.5em
+        right: 1em
+        cursor: pointer
+        font-size: 1.5em
+    
+    .logo 
+        width: 33.33333333%
+    
+    .active 
+        display: block
+
+#index 
+    img 
+        width: 100% 
+
+#facepaint 
+    h1, h2 
+        text-align: center
+    
+    .thumbtack 
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0 1em 0 0
+    
+    .images 
+        margin: 1em 0
+        column-count: 2
+        column-gap: 0
+        line-height: 0
+        
+        img 
+            width: calc(100% - 1em)
+            border-radius: 0
+            height: auto
+            margin: 0.5em
+
+    .quotes 
+        margin: 1em auto
+
+        .author 
+            text-align: right
+        
+        blockquote 
+            font-style: italic
+            margin: 2em 
+            position: relative
+        
+        blockquote::before 
+            content: '\201c'
+            display: block
+            font-family: 'Times New Roman'
+            font-size: 4em
+            position: absolute
+            left: -0.5em
+            top: 0
+            color: lighten($black, 25%)
+        
+        blockquote::after 
+            content: '\201d'
+            display: block
+            font-family: 'Times New Roman'
+            font-size: 4em
+            position: absolute
+            right: -0.4em
+            bottom: 0.25em
+            color: lighten($black, 25%)
+        
+#gallery 
+    text-align: center
+    max-width: 900px
+
+    .container 
+        margin: 1em auto 2em auto
+        display: grid
+        grid-template-columns: repeat(2, calc(50% - 0.5em))
+        grid-column-gap: 1em
+        grid-row-gap: 1em
+
+        .item 
+            //border: 1px solid $black
+
+            h2 
+                font-size: 1.25em
+                margin: 0
+
+            .frame 
+                height: 0
+                overflow: hidden
+                padding-bottom: 100%
+                position: relative
+
+                img 
+                    border-radius: 0
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    width: 100%
+
+#events 
+    max-width: 900px
+
+    h1, h2 
+        text-align: center
+
+    ul 
+        li 
+            margin-bottom: 4em
+
+            img 
+                border-radius: 0
+                width: 100%
+            
+#event 
+    img 
+        width: 100%
+    
+#contact 
+    text-align: center 
+    
+    img 
+        width: 100%
+
+    form 
+        text-align: left
+        max-width: 600px
+        margin: 0 auto
+
+        .form-group, .mc-field-group, .clear 
+            margin: 0 0 1em 0
+            
+            label 
+                font-size: 0.75em
+
+            button, input, textarea 
+                border: 1px solid $black
+                box-sizing: border-box 
+                color: $black
+                font-size: 1em
+                outline: none
+                padding: 0.5em
+                transition: all 0.3s
+                width: 100%
+
+            input:focus, textarea:focus 
+                border: 1px solid $secondary
+            
+            input[type="submit"] 
+                background-color: $pink
+                border: none
+                color: $black
+                width: 50%
+                margin: 0 auto
+                display: block
+                border-radius: 0.4em
+
+            input[type="submit"]:hover 
+                background-color: $secondary
+                color: $white
+                cursor: pointer
+
+#mc_embed_signup 
+    margin: 2em
+
+    h2 
+        text-align: center
+        margin: 0
+    
+footer 
+    background-color: $black
+    text-align: center
+    padding: 1.5em
+    color: $white
+    
+    h3 
+        margin-bottom: 0.5em 
+    
+    a 
+        color: $white
+        margin: 1em
+
+@media only screen and (min-width: 950px) 
+    nav 
+        display: flex
+        justify-content: space-between
+        align-items: center
+     
+        .main-nav 
+            display: flex
+            justify-content: flex-end
+
+            li 
+                margin: 1em
+
+        .logo 
+            width: 100px
+            
+        .navbar-toggle 
+            display: none
+
+    #index 
+        .content 
+            overflow: auto
+            img 
+                width: 40%
+                float: right
+                margin: 0 1em
+            
+    #facepaint 
+        .thumbtack 
+            float: left
+
+    #events 
+        h2 
+            text-align: left
+
+        ul 
+            li 
+                overflow: auto
+                margin: 0 0 2em 0
+
+                img 
+                    width: 40%
+                    float: left
+                    margin: 0 1em 0 0
+
+                .content 
+                    margin: 0 0 0 calc(40% + 1em)
+                
+    #event 
+        overflow: auto
+    
+        img 
+            width: 40%
+            float: left
+            margin: 0 1em 0 0
