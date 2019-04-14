@@ -272,18 +272,7 @@ nav {
   ul {
     li {
       margin-bottom: 4em;
-
-      img {
-        border-radius: 0;
-        width: 100%;
-      }
     }
-  }
-}
-
-#event {
-  img {
-    width: 100%;
   }
 }
 
@@ -417,14 +406,8 @@ footer {
         overflow: auto;
         margin: 0 0 2em 0;
 
-        img {
-          width: 40%;
-          float: left;
-          margin: 0 1em 0 0;
-        }
-
         .content {
-          margin: 0 0 0 calc(40% + 1em);
+          margin: 0; 
         }
       }
     }
@@ -432,12 +415,6 @@ footer {
 
   #event {
     overflow: auto;
-  
-    img {
-      width: 40%;
-      float: left;
-      margin: 0 1em 0 0;
-    }
   }
 }
 

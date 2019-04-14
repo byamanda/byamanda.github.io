@@ -4,7 +4,6 @@ start_date: 2018-06-21T18:00:00-08
 end_date: 2018-06-21T20:00:00-08
 location_name: GroWashington
 address: 3013 Colby Avenue, Everett, WA, 98201
-image: everett-art-walk.jpeg
 ---
 Take a stroll around downtown Everett and see some amazing local art! You can stop by and say 
 to hi and have a cookie on June 21st. The event is completely free! This is a great 
