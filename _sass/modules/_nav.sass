@@ -1,12 +1,25 @@
 .nav
-    &__toggle
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 1em 
 
-    &__logo-link
+    &__toggle
+        display: none
 
     &__logo
+        width: 100px
 
     &__menu
+        display: flex
 
     &__menu-item
+        margin: 1em
 
     &__menu-link
+        border-bottom: 3px solid transparent
+        transition: all 0.3s
+
+        &:hover
+            color: $pink
+            border-bottom-color: $pink
