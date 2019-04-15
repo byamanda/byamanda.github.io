@@ -7,7 +7,11 @@ layout: default
 
 <h1>{{page.title}}</h1>
 
-<h3><i class="fa fa-calendar-alt"></i> {{ page.start_date | date: "%a %b %-d, %Y, %-I:%M %p"}} - {{ page.end_date | date: "%a %b %-d, %Y, %-I:%M %p" }}</h3>
+{% if page.no_time and page.end_date %}
+  <h3><i class="fa fa-calendar-alt"></i> {{ page.start_date | date: "%a %b %-d, %Y"}} - {{ page.end_date | date: "%a %b %-d, %Y" }}</h3>
+{% elsif page.end_date %}
+  <h3><i class="fa fa-calendar-alt"></i> {{ page.start_date | date: "%a %b %-d, %Y, %-I:%M %p"}} - {{ page.end_date | date: "%a %b %-d, %Y, %-I:%M %p" }}</h3>
+{% endif %}
 <h3><i class="fa fa-map-marked-alt"></i> {{ page.location_name }} - <a href="https://maps.google.com?q={{page.address}}">{{ page.address }}</a></h3>
 <div class="content">
   {{ content }}

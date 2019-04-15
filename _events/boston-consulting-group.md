@@ -1,7 +1,8 @@
 ---
 title: Amanda Desiree Evelyn at Boston Consulting Group
-start_date: 2019-07-01T12:30:00-08
-end_date: 2019-07-31T13:30:00-08
+start_date: 2019-07-01T00:00:00-08
+end_date: 2019-07-31T00:00:00-08
+no_time: true
 location_name: Boston Consulting Group
 address: "1201 3rd Ave #5400, Seattle, WA 98101"
 ---
