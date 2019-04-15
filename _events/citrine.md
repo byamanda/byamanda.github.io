@@ -1,10 +1,10 @@
 ---
 title: Citrine Health Non-Profit Showcase
-start_date: 2018-11-01T17:30:00-08
-end_date: 2018-11-30T18:30:00-08
+start_date: 2018-11-01T00:00:00-08
+end_date: 2018-11-30T00:00:00-08
+no_time: true
 location_name: Citrine Health
 address: 2940 West Marine View Drive, Everett, WA, 98201
-image: still-i-rise.jpeg
 ---
 Citrine Health strives to create, maintain and support women's healthcare and disease 
 prevention. A passion that I share. I'm excited to explore the female form through my 

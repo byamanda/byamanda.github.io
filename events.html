@@ -9,10 +9,13 @@ page_id: events
   {% for event in events %}
     <li>
       <h2><a href="{{ event.url }}">{{ event.title }}</a></h2>
-      <img src="/assets/images/{{ event.image }}" alt=""/> 
 
       <div class="content">
-        <h3><i class="fa fa-calendar-alt"></i> {{ event.start_date | date: "%a %b %-d, %Y, %-I:%M %p"}} - {{ event.end_date | date: "%a %b %-d, %Y, %-I:%M %p" }}</h3>
+        {% if event.no_time and event.end_date %}
+          <h3><i class="fa fa-calendar-alt"></i> {{ event.start_date | date: "%a %b %-d, %Y"}} - {{ event.end_date | date: "%a %b %-d, %Y" }}</h3>
+        {% elsif event.end_date %}
+          <h3><i class="fa fa-calendar-alt"></i> {{ event.start_date | date: "%a %b %-d, %Y, %-I:%M %p"}} - {{ event.end_date | date: "%a %b %-d, %Y, %-I:%M %p" }}</h3>
+        {% endif %}
         <h3><i class="fa fa-map-marked-alt"></i> {{ event.location_name }} 
           (<a href="https://maps.google.com?q={{event.address}}">click for map</a>)
         </h3> 
