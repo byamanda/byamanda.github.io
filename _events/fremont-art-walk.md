@@ -9,3 +9,5 @@ address: 600 N 36th St. Seattle, WA
 Art is available for viewing Everyday in June and July
 
 7am to 7pm on weekdays and 9am to 5pm on weekends. 
+
+Come find me on June 7th and July 5th from 6pm to 9pm for the actual art walk where you can purchase select merchandise.

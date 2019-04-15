@@ -5,6 +5,8 @@ no_time: true
 location_name: Choux Choux Bakery
 address: 2900 Grand Ave, Everett, WA 98201
 ---
-I'm currently the resident artist at Choux Choux now which means you can come see my art work here any time they're open for the foreseeable future! 
+I'm currently the resident artist at Choux Choux now which means you can come see my art work here any time they're open! 
+
+Checkout their website for hours! [Choux Choux Website](http://chouxchouxbakery.com/)
 
 Come hang out in downtown Everett, grab a delicious pastry and see my work in person!  Everything from prints to originals available for purchase.
