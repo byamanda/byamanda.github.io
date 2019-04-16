@@ -1,7 +1,6 @@
 ---
 title: Contact
 page_id: contact
-script: true
 ---
 <!-- Begin Mailchimp Signup Form -->
 <div id="mc_embed_signup">
@@ -49,7 +48,7 @@ script: true
 
 <div id="alert" class=""></div>
 
-<form id="contact_form" method="POST" action="https://getsimpleform.com/messages?form_api_token={{ site.simpleform }}">
+<form id="contact_form" method="POST" action="https://formspree.io/{{ site.data.social.email }}">
   <div class="form-group">
     <label for="name">Full Name</label>
     <input placeholder="Magical Unicorn" type="text" name="name" id="name" value="" />
@@ -57,19 +56,16 @@ script: true
 
   <div class="form-group">
     <label for="email">Email Address</label>
-    <input placeholder="magical@example.com" type="email" name="email" id="email" value="" />
+    <input placeholder="magical@example.com" type="email" name="_replyto" id="email" value="" />
   </div> 
-
-  <div class="form-group">
-    <label for="subject">Subject</label>
-    <input placeholder="I'd like to know about..." type="text" name="subject" id="subject" value="" />
-  </div>
-
+ 
   <div class="form-group">
     <label for="message">Message</label>
     <textarea placeholder="Write your question here..." rows="10" name="message" id="message"></textarea>
   </div>
 
+  <input type="hidden" name="_subject" value="New Message from byamanda.design!" />
+  <input type="hidden" name="_gotcha" />
   <div class="clear">
     <input type="submit" value="Submit" name="submit" class="button">
   </div>
