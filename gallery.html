@@ -2,7 +2,9 @@
 title: Gallery
 page_id: gallery
 ---
-<h1>{{ page.title }}</h1>
+<div class="title">
+  {{ page.title }}
+</div>
 
 <div class="container">
   {% for item in site.gallery %}
@@ -13,10 +15,12 @@ page_id: gallery
       <h2>{{ item.title }}</h2>
       <h3>{{ item.medium }}</h3>
       <h3>{% if item.stock %}Availible{% else %}Sold{% endif %} - Size {{ item.size }}</h3>
-    </div>
+    </div> 
   {% endfor %}
 </div>
 
 <h2>Interested in one of these pieces? Send me an <a href="mailto:{{ site.data.social.email }}">email!</a></h2>
 
+<div class="gallery">
 
+</div>
