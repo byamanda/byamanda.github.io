@@ -5,6 +5,8 @@
 @import 'modules/gallery'
 @import 'modules/events'
 @import 'modules/breadcrumbs'
+@import 'modules/collage'
+@import 'modules/quotes'
 
 .tagline 
     font-size: 2em
@@ -24,3 +26,11 @@
 .link
     @extend %link
     color: $secondary
+
+.thumbtack
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .widget 
+        margin: 1em
