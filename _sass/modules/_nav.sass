@@ -1,20 +1,43 @@
 .nav
-    align-items: center
-    display: flex
-    justify-content: space-between
-    padding: 1em 
+    text-align: center
+    padding: 1em
+
+    @media screen and (min-width: $break-small)
+        align-items: center
+        display: flex
+        justify-content: space-between
+        padding: 1em 
 
     &__toggle
-        display: none
+        display: block    
+        position: absolute
+        right: 1em
+        top: 1em
+        font-size: 1.5em
+
+        @media screen and (min-width: $break-small)
+            display: none
 
     &__logo
-        width: 100px
+        width: calc(100% / 3)
+
+        @media screen and (min-width: $break-small)
+            width: 100px
 
     &__menu
-        display: flex
+        display: none
+
+        &.active
+            display: block
+
+        @media screen and (min-width: $break-small)
+            display: flex
 
     &__menu-item
-        margin: 1em
+        margin: 1em auto
+
+        @media screen and (min-width: $break-small)
+            margin: 1em
 
     &__menu-link
         @extend %link
