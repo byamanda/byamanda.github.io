@@ -12,6 +12,20 @@
             ],
             "group": "build",
             "problemMatcher": []
+        },
+        {
+            "label": "Start Browser Sync",
+            "type": "shell",
+            "command": "browser-sync",
+            "args": [
+                "start",
+                "--proxy",
+                "localhost:4000",
+                "--files",
+                "_site/*.*"
+            ],
+            "group": "build",
+            "problemMatcher": []
         }
     ]
 }
