@@ -2,21 +2,31 @@
 title: Gallery
 page_id: gallery
 ---
-<h1>{{ page.title }}</h1>
-
-<div class="container">
-  {% for item in site.gallery %}
-    <div class="item">
-      <div class="frame">
-        <img src="/assets/images/gallery/{{ item.image }}" alt="{{ item.title }}" />
-      </div>
-      <h2>{{ item.title }}</h2>
-      <h3>{{ item.medium }}</h3>
-      <h3>{% if item.stock %}Availible{% else %}Sold{% endif %} - Size {{ item.size }}</h3>
-    </div>
-  {% endfor %}
+<div class="title">
+  {{ page.title }}
 </div>
 
-<h2>Interested in one of these pieces? Send me an <a href="mailto:{{ site.data.social.email }}">email!</a></h2>
+<div class="gallery">
+  {% for item in site.gallery %}
+    <div class="gallery__item art-piece">
+      <div class="art-piece__image">
+        <img src="/assets/images/gallery/{{ item.image }}" alt="{{ item.title }}" />
+      </div>
 
+      <div class="art-piece__title">{{ item.title }}</div>
+      <div class="art-piece__info">
+        <div class="art-piece__medium">{{ item.medium }}</div>
+        <div class="art-piece__size">{{ item.size }}</div>
+      </div>
+      <div class="art-piece__stock">
+        {% if item.stock != true %}
+          Sold!
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
 
+  <div class="gallery__info">
+    Interested in one of these pieces? Send me an <a class="link" href="mailto:{{ site.data.social.email }}">email!</a>
+  </div>
+</div>

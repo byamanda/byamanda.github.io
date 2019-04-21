@@ -1,3 +1,10 @@
-<header>
-  <h1>{{ site.tagline }}</h1>
+<header id="header">
+  {% include navigation.html %}
+
+  {% if page.page_id == 'index' %}
+  <div class="tagline">
+    <div class="tagline__filter"></div>
+    <img class="tagline__image" src="/assets/images/tagline.svg" alt="Florals with Feeling">
+  </div>
+  {% endif %}
 </header>

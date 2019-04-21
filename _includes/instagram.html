@@ -1,12 +1,10 @@
-<div id="instagram">
-  <h1>Instagram Profile</h1>
-  <hr />
-  <div id="ig-profile">
-    <img id="ig-profilepic" src="" />
-    <h2><a id="ig-handle" href="{{ site.data.social.instagram }}"></a></h2> 
-    <h3>
-      <span id="ig-followers"></span> Followers - <span id="ig-posts"></span> Posts
-    </h3>
+<div class="title">Instagram Profile</div>
+<div class="instagram">
+  <div class="instagram__profile ig-profile">
+    <img class="ig-profile__picture" id="js-ig-pic" src="">
+    <a class="ig-profile__handle" id="js-ig-handle" href="{{ site.data.social.instagram }}"></a> 
+    <div class="ig-profile__stats" id="js-ig-stats"></div>
   </div>
-  <div id="ig-feed"></div>
+
+  <div class="instagram__feed ig-feed" id="js-ig-feed"></div>
 </div>

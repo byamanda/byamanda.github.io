@@ -40,7 +40,6 @@ defaults:
       path: ""
       type: "gallery"
     values:
-      layout: "gallery"
       page_id: "gallery"
   - scope:
       path: ""

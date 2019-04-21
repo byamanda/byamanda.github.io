@@ -1,0 +1,57 @@
+@import 'modules/bio'
+@import 'modules/breadcrumbs'
+@import 'modules/collage'
+@import 'modules/events'
+@import 'modules/form'
+@import 'modules/gallery'
+@import 'modules/instagram'
+@import 'modules/nav'
+@import 'modules/quotes'
+@import 'modules/social-media'
+@import 'modules/tagline'
+
+%leaf
+    content: ''
+    background: url(/assets/images/leaves@2x.png) no-repeat
+    display: block
+    margin: 0.5em
+    width: 1em 
+    height: 1em 
+    background-size: 0.5em 1em
+
+.title 
+    font-family: $header-font
+    font-size: 1.5em
+    margin-bottom: 1em
+    text-align: center
+    display: flex 
+    align-items: center
+    justify-content: center 
+
+
+    &::before 
+        @extend %leaf
+        transform: scale(-1, 1) rotate(-90deg)
+
+    &::after
+        @extend %leaf
+        transform: rotate(-90deg)
+
+
+%link 
+    transition: all 0.3s
+
+    &:hover
+        color: $pink
+
+.link
+    @extend %link
+    color: $secondary
+
+.thumbtack
+    align-items: center
+    display: flex
+    justify-content: center
+
+    .widget 
+        margin: 1em
