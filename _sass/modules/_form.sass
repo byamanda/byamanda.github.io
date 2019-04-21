@@ -1,0 +1,34 @@
+.form
+    display: flex
+    flex-direction: column
+    max-width: 600px
+    margin: 0 auto
+
+    &__info
+        margin-bottom: 1em
+        font-style: italic
+
+    &__group
+        margin-bottom: 1em
+
+    &__input
+        width: 100%
+        padding: 0.5em
+        transition: all 0.3s
+        color: $black
+
+        &:focus
+            border-color: $secondary
+
+    &__button
+        background-color: $pink
+        width: 50%
+        padding: 0.5em
+        transition: all 0.3s
+        display: block
+        margin: 0 auto
+
+        &:hover 
+            background-color: $secondary
+            color: $white 
+            cursor: pointer

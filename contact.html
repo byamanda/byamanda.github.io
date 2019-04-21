@@ -2,15 +2,16 @@
 title: Contact
 page_id: contact
 ---
+
+<h1 class="title">Subscribe to stay up to date with what I'm doing!</h1>
+
 <!-- Begin Mailchimp Signup Form -->
 <div id="mc_embed_signup">
-  <form action="https://design.us20.list-manage.com/subscribe/post?u=33121bd29d732f631cd12fe1c&amp;id=7fe3a3f1af" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+  <form action="https://design.us20.list-manage.com/subscribe/post?u=33121bd29d732f631cd12fe1c&amp;id=7fe3a3f1af" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-      <h2>Subscribe to stay up to date with what I'm doing!</h2>
-
-      <div class="mc-field-group">
-      	<label for="mce-EMAIL">Email Address </label>
-      	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+      <div class="mc-field-group form__group">
+      	<label class="form__label" for="mce-EMAIL">Email Address </label>
+      	<input class="form__input required email" type="email" value="" name="EMAIL" id="mce-EMAIL">
       </div>
       
       <div id="mce-responses" class="clear">
@@ -23,8 +24,8 @@ page_id: contact
         <input type="text" name="b_33121bd29d732f631cd12fe1c_7fe3a3f1af" tabindex="-1" value="">
       </div>
       
-      <div class="clear">
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+      <div class="clear form__group">
+        <input class="form__button button" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
       </div>
     </div>
   </form>
@@ -32,44 +33,41 @@ page_id: contact
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
 
-<h1>Contact Me</h1>
-<hr />
+<h1 class="title">Contact Me</h1>
 
-<p>
-  Curious about a piece of artwork? 
-  Want to commission a painting?
-  Chat about your favorite coffee shop or adventure spot?
-  Shoot me an e-mail!
-  I would love to hear from you!
+<form class="form" method="POST" action="https://formspree.io/{{ site.data.social.email }}">
+  <div class="form__info">
+    Curious about a piece of artwork? 
+    Want to commission a painting?
+    Chat about your favorite coffee shop or adventure spot?
+    Shoot me an e-mail!
+    I would love to hear from you!
 
-  <br />
-  With love, adventure, and creativity, Amanda.
-</p>
-
-<div id="alert" class=""></div>
-
-<form id="contact_form" method="POST" action="https://formspree.io/{{ site.data.social.email }}">
-  <div class="form-group">
-    <label for="name">Full Name</label>
-    <input placeholder="Magical Unicorn" type="text" name="name" id="name" value="" />
+    <br />
+    <br />
+    With love, adventure, and creativity, 
+    <br />
+    Amanda
   </div>
 
-  <div class="form-group">
-    <label for="email">Email Address</label>
-    <input placeholder="magical@example.com" type="email" name="_replyto" id="email" value="" />
+  <div class="form__group">
+    <label class="form__label" for="name">Full Name</label>
+    <input class="form__input" placeholder="Magical Unicorn" type="text" name="name" id="name" value="" />
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="email">Email Address</label>
+    <input class="form__input" placeholder="magical@example.com" type="email" name="_replyto" id="email" value="" />
   </div> 
  
-  <div class="form-group">
-    <label for="message">Message</label>
-    <textarea placeholder="Write your question here..." rows="10" name="message" id="message"></textarea>
+  <div class="form__group">
+    <label class="form__label" for="message">Message</label>
+    <textarea class="form__input" placeholder="Write your question here..." rows="10" name="message" id="message"></textarea>
   </div>
 
   <input type="hidden" name="_subject" value="New Message from byamanda.design!" />
   <input type="hidden" name="_gotcha" />
-  <div class="clear">
-    <input type="submit" value="Submit" name="submit" class="button">
+  <div class="form__group">
+    <input class="form__button" type="submit" value="Submit" name="submit">
   </div>
 </form>
-
-
-
