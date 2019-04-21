@@ -1,0 +1,40 @@
+.instagram
+    display: grid
+    grid-template-columns: 1fr 3fr
+    grid-column-gap: 1em
+
+
+.ig-profile
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    
+
+    &__picture
+        width: 100px
+        height: 100px
+        border-radius: 100px
+    
+    &__handle
+        @extend .link
+        font-size: 1.25em
+
+    &__stats
+        text-align: center
+
+.ig-feed 
+    $feed-gap: 10px
+    $num-rows: 3
+    display: grid
+    grid-template-columns: repeat($num-rows, 1fr)
+    grid-column-gap: $feed-gap
+    grid-row-gap: $feed-gap
+
+    &__post
+        height: 0
+        padding-bottom: 100%
+        overflow: hidden 
+
+    &__media
+        width: 100%
