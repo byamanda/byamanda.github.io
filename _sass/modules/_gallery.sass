@@ -1,0 +1,16 @@
+.gallery
+    display: grid 
+    grid-template-columns: repeat(2, 1fr)
+    grid-column-gap: 1em
+    grid-row-gap: 1em
+
+.art-piece 
+    &__image
+        +center-image()
+
+    &__title
+        text-align: center
+        font-size: 1.25em
+    
+    &__info
+        text-align: center

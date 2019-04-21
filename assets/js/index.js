@@ -2,11 +2,10 @@
 
   function createMediaElement(imgUrl, link) {
     let postElem = document.createElement('div');
-    postElem.classList.add('ig-feed__post');
+    postElem.classList.add('ig-feed__media');
 
     let linkElem = document.createElement('a');
     let imageElem = document.createElement('img');
-    imageElem.classList.add('ig-feed__media')
 
     imageElem.src = imgUrl;
     linkElem.href = link;
