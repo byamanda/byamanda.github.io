@@ -16,14 +16,12 @@ page_id: gallery
       <div class="art-piece__title">{{ item.title }}</div>
       <div class="art-piece__info">
         <div class="art-piece__medium">{{ item.medium }}</div>
-        <div class="art-piece__stock">
-          {% if item.stock %}
-            Availible
-          {% else %}
-            Sold
-          {% endif %}
-        </div>
         <div class="art-piece__size">{{ item.size }}</div>
+      </div>
+      <div class="art-piece__stock">
+        {% if item.stock != true %}
+          Sold!
+        {% endif %}
       </div>
     </div>
   {% endfor %}

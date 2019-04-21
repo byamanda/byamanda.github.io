@@ -25,18 +25,31 @@
         font-size: 1.25em
         padding: calc(1.25em / 2)
         text-align: center
-    
+
+    &__stock
+        background-color: $secondary
+        color: $white
+        font-weight: bold
+        padding: 0 3em
+        position: absolute
+        right: 0
+        top: 0
+        transform-origin: center
+        transform: translate(25%, 100%) rotate(45deg)
+
     &__info
         background-color: $pink
         font-weight: bold
         left: 0
         opacity: 0.9
+        padding: 1em
         position: absolute
         right: 0
         text-align: center
         top: 0
         transform: translateY(-100%)
         transition: all 0.3s
+        z-index: 1
 
     &:hover, &:focus
         .art-piece__info
