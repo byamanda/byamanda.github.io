@@ -14,12 +14,30 @@
         text-align: center
 
 .art-piece 
+    overflow: hidden
+    position: relative
+
     &__image
         +center-image()
 
     &__title
+        border: 1px solid lighten($black, 20%)
         font-size: 1.25em
+        padding: calc(1.25em / 2)
         text-align: center
     
     &__info
+        background-color: $pink
+        font-weight: bold
+        left: 0
+        opacity: 0.9
+        position: absolute
+        right: 0
         text-align: center
+        top: 0
+        transform: translateY(-100%)
+        transition: all 0.3s
+
+    &:hover, &:focus
+        .art-piece__info
+            transform: translateY(0)

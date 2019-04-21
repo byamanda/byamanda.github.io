@@ -13,8 +13,8 @@ page_id: gallery
         <img src="/assets/images/gallery/{{ item.image }}" alt="{{ item.title }}" />
       </div>
 
+      <div class="art-piece__title">{{ item.title }}</div>
       <div class="art-piece__info">
-        <div class="art-piece__title">{{ item.title }}</div>
         <div class="art-piece__medium">{{ item.medium }}</div>
         <div class="art-piece__stock">
           {% if item.stock %}
