@@ -1,23 +1,23 @@
-@import 'modules/nav'
 @import 'modules/bio'
-@import 'modules/instagram'
-@import 'modules/social-media'
-@import 'modules/gallery'
-@import 'modules/events'
 @import 'modules/breadcrumbs'
 @import 'modules/collage'
-@import 'modules/quotes'
+@import 'modules/events'
 @import 'modules/form'
+@import 'modules/gallery'
+@import 'modules/instagram'
+@import 'modules/nav'
+@import 'modules/quotes'
+@import 'modules/social-media'
 
 .tagline 
     font-size: 2em
     text-align: center
 
 .title 
+    font-family: $header-font
     font-size: 1.5em
     margin-bottom: 1em
     text-align: center
-    font-family: $header-font
 
 %link 
     transition: all 0.3s
@@ -30,9 +30,9 @@
     color: $secondary
 
 .thumbtack
+    align-items: center
     display: flex
     justify-content: center
-    align-items: center
 
     .widget 
         margin: 1em

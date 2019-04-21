@@ -1,22 +1,21 @@
 @import 'normalize'
 
 html, body 
+    color: $black
+    font-family: $body-font
     font-size: 24px
     line-height: 1.5em
-    font-family: $body-font
-    color: $black
-    box-sizing: border-box // TODO: change this to all!
 
 * 
     box-sizing: border-box
     line-height: 1.5em
 
 a 
-    text-decoration: none
     color: $black
+    text-decoration: none
 
 button, input, textarea
-    outline: none 
     border: 1px solid lighten($black, 20%)
     color: $black
     font-family: $body-font
+    outline: none 

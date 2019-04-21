@@ -1,11 +1,3 @@
-=big-quote($char)
-    content: $char
-    display: block
-    font-family: 'Times New Roman'
-    font-size: 4em
-    position: absolute
-    color: lighten($black, 25%)
-    
 .quotes
     &__item
 
@@ -17,13 +9,15 @@
 
         &::before 
             +big-quote('\201c')
+
             left: -0.5em
             top: 0
 
         &::after
             +big-quote('\201d')
-            right: -0.4em
+
             bottom: 0em
+            right: -0.4em
 
     &__author
         text-align: right
