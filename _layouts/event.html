@@ -1,18 +1,27 @@
 ---
 layout: default
 ---
-<div>
-  <a href="/events.html"><i class="fa fa-caret-left"></i> Go back to events</a>
+<div class="breadcrumbs">
+  <a href="/events.html" class="breadcrumbs__link"><i class="fa fa-caret-left"></i> Go back to events</a>
 </div>
 
-<h1>{{page.title}}</h1>
+<h1 class="title">{{ page.title }}</h1>
 
-{% if page.no_time and page.end_date %}
-  <h3><i class="fa fa-calendar-alt"></i> {{ page.start_date | date: "%a %b %-d, %Y"}} - {{ page.end_date | date: "%a %b %-d, %Y" }}</h3>
-{% elsif page.end_date %}
-  <h3><i class="fa fa-calendar-alt"></i> {{ page.start_date | date: "%a %b %-d, %Y, %-I:%M %p"}} - {{ page.end_date | date: "%a %b %-d, %Y, %-I:%M %p" }}</h3>
-{% endif %}
-<h3><i class="fa fa-map-marked-alt"></i> {{ page.location_name }} - <a href="https://maps.google.com?q={{page.address}}">{{ page.address }}</a></h3>
-<div class="content">
-  {{ content }}
+<div class="event">
+  <div class="event__date">
+    {% if page.no_time and page.end_date %}
+      <i class="fa fa-calendar-alt"></i>
+      {{ page.start_date | date: "%a %b %-d, %Y"}} - {{ page.end_date | date: "%a %b %-d, %Y" }}
+    {% elsif page.end_date %}
+      <i class="fa fa-calendar-alt"></i>
+      {{ page.start_date | date: "%a %b %-d, %Y, %-I:%M %p"}} - {{ page.end_date | date: "%a %b %-d, %Y, %-I:%M %p" }}
+    {% endif %}
+  </div>
+  <div class="event__location">
+    <i class="fa fa-map-marked-alt"></i>
+    {{ page.location_name }} - <a href="https://maps.google.com?={{page.address}}" class="link">{{ page.address }}</a>
+  </div>
+  <div class="event__content">
+    {{ content }}
+  </div>
 </div>
