@@ -9,14 +9,6 @@ google_site_verification: "5lWzIeJxNMYNGZ_DIfeq15ZqI28HkII9cFXCSAAWld8"
 
 # Global Variables
 social:
-  # These are used for the jekyll build
-  name: "Amanda Desiree Hamill"
-  instagram: "http://instagram.com/floralsbyamanda"
-  email: "desireeevelynart@gmail.com"
-  facebook: "http://www.facebook.com/amandadesireeevelyn"
-  youtube: "https://www.youtube.com/channel/UCvBizVmlOTlE87GTnSAtPUw"
-
-  # Meta tags
   links:
     - "http://instagram.com/floralsbyamanda"
     - "desireeevelynart@gmail.com"
