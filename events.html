@@ -23,7 +23,7 @@ page_id: events
       </div>
       <div class="event__location">
         <i class="fa fa-map-marked-alt"></i>
-        {{ event.location_name }} ( <a href="https://maps.google.com?={{event.address}}" class="link">click for map</a> )
+        {{ event.location_name }} ( <a href="https://maps.google.com?q={{event.address}}" target="_blank" class="link">click for map</a> )
       </div>
       <div class="event__content">
         {{ event.content | markdownify }}

@@ -19,7 +19,7 @@ layout: default
   </div>
   <div class="event__location">
     <i class="fa fa-map-marked-alt"></i>
-    {{ page.location_name }} - <a href="https://maps.google.com?={{page.address}}" class="link">{{ page.address }}</a>
+    {{ page.location_name }} - <a href="https://maps.google.com?q={{page.address}}" target="_blank" class="link">{{ page.address }}</a>
   </div>
   <div class="event__content">
     {{ content }}
